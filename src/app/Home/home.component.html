@@ -1,0 +1,16 @@
+<div class="container">
+    <form [formGroup]="valuesPopUp" (ngSubmit)="GetPopUp()">
+
+        <div class="form-group row">
+            <label for="formGroupExampleInput" class="mt-2">Tittle</label>
+            <input class="form-control" type="text" placeholder="Write a tittle" formControlName="tittle">
+
+            <label for="formGroupExampleInput" class="mt-2">text</label>
+            <textarea class="form-control" type="text" placeholder="Write some text or Html" formControlName="data"></textarea>
+
+            <div class="col-sm-4 mt-2">
+                <button class="span btn btn-primary" type="submit">PopUp!</button>
+            </div>
+        </div>
+    </form>
+</div>
