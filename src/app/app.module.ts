@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbActiveModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './Home/home.component';
 import { ReactiveFormsModule } from '@angular/forms'
 import { Modal } from './Modal/Modal.component';
@@ -17,7 +17,8 @@ import { Modal } from './Modal/Modal.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [NgbActiveModal],
   bootstrap: [AppComponent]
